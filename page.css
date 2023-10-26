@@ -217,6 +217,7 @@ section:last-of-type .invite img {
     display: block;
     position: relative;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 section:last-of-type .invite p {
@@ -243,17 +244,26 @@ section:last-of-type .invite p::before {
     z-index: -1;
 }
 
-.cards div {
+div.card-flex {
     background-color: var(--card-bg);
-    margin-top: 1rem;
     text-align: center;
     padding-bottom: 2rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
 }
 
 .cards img {
     border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 200px;
 }
+
+
 
 .cards h4 {
     margin: 1rem 0 0.4rem 0;
@@ -392,34 +402,34 @@ footer div p {
         margin-bottom: 0.2rem;
     }
 
-}
 
-@media screen and (min-width: 1024px) {
-    .flex-items div img {
-        height: 400px;
+    @media screen and (min-width: 1024px) {
+        .flex-items div img {
+            height: 400px;
+        }
+
+        nav {
+            padding: 2rem 7rem;
+            gap: 2rem;
+        }
+
+        header {
+            padding: 3rem 7rem;
+        }
+
+        section:first-of-type {
+            padding: 3rem 14rem;
+        }
+
+        section:nth-of-type(2)>div:last-of-type>img {
+            height: 450px;
+        }
+
     }
 
-    nav {
-        padding: 2rem 7rem;
-        gap: 2rem;
-    }
-
-    header {
-        padding: 3rem 7rem;
-    }
-
-    section:first-of-type {
-        padding: 3rem 14rem;
-    }
-
-    section:nth-of-type(2)>div:last-of-type>img {
-        height: 450px;
-    }
-
-}
-
-@media screen and (min-width: 1208px) {
-    section:first-of-type {
-        padding: 3rem 19rem;
+    @media screen and (min-width: 1208px) {
+        section:first-of-type {
+            padding: 3rem 19rem;
+        }
     }
 }
