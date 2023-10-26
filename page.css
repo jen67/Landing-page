@@ -375,8 +375,51 @@ footer div p {
         justify-content: space-between;
     }
 
-    .flex-items img {
-        width: 500px;
+    .flex-items div {
+        width: 100%;
+    }
+
+    .flex-items div img {
         height: 300px;
+    }
+
+    section:nth-of-type(2)>div:last-of-type>img {
+        height: 350px;
+        margin: 0;
+    }
+
+    section:nth-of-type(2) img {
+        margin-bottom: 0.2rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .flex-items div img {
+        height: 400px;
+    }
+
+    nav {
+        padding: 2rem 7rem;
+        gap: 2rem;
+    }
+
+    header {
+        padding: 3rem 7rem;
+    }
+
+    section:first-of-type {
+        padding: 3rem 14rem;
+    }
+
+    section:nth-of-type(2)>div:last-of-type>img {
+        height: 450px;
+    }
+
+}
+
+@media screen and (min-width: 1208px) {
+    section:first-of-type {
+        padding: 3rem 19rem;
     }
 }
