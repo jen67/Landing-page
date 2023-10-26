@@ -253,7 +253,7 @@ div.card-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 
 }
 
@@ -403,33 +403,55 @@ footer div p {
     }
 
 
-    @media screen and (min-width: 1024px) {
-        .flex-items div img {
-            height: 400px;
-        }
-
-        nav {
-            padding: 2rem 7rem;
-            gap: 2rem;
-        }
-
-        header {
-            padding: 3rem 7rem;
-        }
-
-        section:first-of-type {
-            padding: 3rem 14rem;
-        }
-
-        section:nth-of-type(2)>div:last-of-type>img {
-            height: 450px;
-        }
-
+    .cards {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 4rem
     }
 
-    @media screen and (min-width: 1208px) {
-        section:first-of-type {
-            padding: 3rem 19rem;
-        }
+
+    .card-flex {
+        height: 200px;
+    }
+
+    .card-flex h4 {
+        padding: 1rem 1rem 0;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .flex-items div img {
+        height: 400px;
+    }
+
+    nav {
+        padding: 2rem 7rem;
+        gap: 2rem;
+    }
+
+    header {
+        padding: 3rem 7rem;
+    }
+
+    section:first-of-type {
+        padding: 3rem 14rem;
+    }
+
+    section:nth-of-type(2)>div:last-of-type>img {
+        height: 450px;
+    }
+
+    .card-flex h4 {
+        padding: 1rem 3rem 0;
+    }
+
+
+}
+
+@media screen and (min-width: 1208px) {
+    section:first-of-type {
+        padding: 3rem 19rem;
     }
 }
