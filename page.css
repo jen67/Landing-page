@@ -1,6 +1,382 @@
-:root{
-    --bg-hero-and-footer: #1F2937;
-    --hero-main-txt: #F9FAF8;
-    --hero-links: #E5E7EB;
+:root {
+    --bg-hero-and-footer: #EFF7FF;
+    --hero-main-txt: #FFFFFF;
+    --other-txts: black;
     --button: #3882F6;
+    --card-bg: #E5E7EB;
+    --footer: #1F2937;
+    --menu-bg: rgba(0, 0, 0, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: inter;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+header {
+    background: url(./images/bg.jpg) no-repeat center center/cover;
+    text-align: center;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.25rem;
+}
+
+#handburgers {
+    position: relative;
+    cursor: pointer;
+}
+
+#close-menu {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+#open-menu {
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+}
+
+header #handburgers {
+    width: 18px;
+    position: relative;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+header ul li a:hover {
+    color: var(--button);
+    letter-spacing: 0.9px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header nav ul {
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    width: 50%;
+    height: 300px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.5s ease-in-out;
+    background-color: var(--bg-hero-and-footer);
+    border-radius: 10px;
+}
+
+
+.hide {
+    transform: scale(0);
+}
+
+.hero-text {
+    color: var(--hero-main-txt);
+    font-weight: 800;
+    padding: 1.2rem;
+}
+
+.hero-text h1 {
+    font-size: 1.7rem;
+    margin: 4rem 0 0.5rem 0;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.bg-glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+button {
+    background-color: var(--button);
+    color: var(--hero-main-txt);
+    border-radius: 10px;
+    padding: 8px 50px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    border: none;
+}
+
+section:not(:last-of-type) {
+    background-color: var(--bg-hero-and-footer);
+    padding: 1.25rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+}
+
+section:first-of-type {
+    padding: 1.25rem 1.2rem;
+}
+
+section:first-of-type p {
+    font-size: 1.18rem;
+}
+
+section:nth-of-type(2) div {
+    position: relative;
+    overflow: hidden;
+}
+
+section:nth-of-type(2) img {
+    margin-bottom: 1rem;
+    display: block;
+    max-width: 100%;
+}
+
+section:nth-of-type(2) p {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+section:last-of-type {
+    margin-top: 1.2rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section:last-of-type .invite {
+    position: relative;
+}
+
+section:last-of-type .invite h3 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section:last-of-type .invite img {
+    border-radius: 20px;
+    display: block;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+section:last-of-type .invite p {
+    font-size: 1.2rem;
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+section:last-of-type .invite p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    mix-blend-mode: multiply;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.cards div {
+    background-color: var(--card-bg);
+    margin-top: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.cards img {
+    border-radius: 5px 5px 0 0;
+}
+
+.cards h4 {
+    margin: 1rem 0 0.4rem 0;
+    font-size: 1.7rem;
+}
+
+.cards p {
+    font-size: 1.2rem;
+    padding: 0 1.25rem;
+}
+
+footer {
+    background-color: var(--footer);
+    width: 100%;
+    padding: 1.25rem;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer div img {
+    width: 80px;
+}
+
+footer div p {
+    font-size: 0.7rem;
+    color: #FFFFFF;
+}
+
+/* Styles for Larger Screens */
+@media screen and (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        gap: 2rem;
+    }
+
+    header {
+        padding: 2.5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    header nav ul {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        height: auto;
+        background-color: transparent;
+    }
+
+    .header img {
+        width: 200px;
+    }
+
+    .hide {
+        transform: scale(1);
+        padding: 0;
+        width: unset;
+    }
+
+    #handburgers {
+        display: none;
+    }
+
+    div.hero-text {
+        width: 500px;
+        text-align: left;
+        padding: 3rem 0;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+    }
+
+    button {
+        margin-top: 1rem;
+        padding: 20px 60px;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    section:first-of-type {
+        padding: 3rem;
+    }
+
+    section:first-of-type h2 {
+        padding-bottom: 1rem;
+
+    }
+
+    section:first-of-type p {
+        font-size: 1.4rem;
+    }
+
+    section:nth-of-type(2) {
+        padding: 0;
+    }
+
+    .flex-items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .flex-items img {
+        width: 500px;
+        height: 300px;
+    }
 }
