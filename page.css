@@ -85,7 +85,7 @@ header ul li a {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 header ul li a:hover {
@@ -102,7 +102,7 @@ header nav ul {
     top: 4.5rem;
     right: 0;
     width: 70%;
-    height: 100vh;
+    height: 50vh;
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ header nav ul {
 
 .hero-text h1 {
     font-size: 1.7rem;
-    margin: 6rem 0 0.5rem 0;
+    margin: 6rem 0 1rem 0;
 }
 
 .hero-text p {
