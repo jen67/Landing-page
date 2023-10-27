@@ -249,7 +249,7 @@ div.card-flex {
     background-color: var(--card-bg);
     text-align: center;
     padding-bottom: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
