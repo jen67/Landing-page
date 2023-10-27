@@ -266,7 +266,10 @@ div.card-flex {
 }
 
 
-
+.cards{
+    width: 70%;
+    margin: auto;
+}
 .cards h4 {
     margin: 1rem 0 0.4rem 0;
     font-size: 1.7rem;
@@ -411,7 +414,8 @@ footer div p {
         display: flex;
         flex-direction: row;
         gap: 1rem;
-        margin-bottom: 4rem
+        margin-bottom: 4rem;
+        width: 100%;
     }
 
 
