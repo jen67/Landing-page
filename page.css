@@ -149,16 +149,12 @@ button {
     background-color: var(--button);
     color: var(--hero-main-txt);
     border-radius: 10px;
-    padding: 10px 60px;
+    padding: 8px 50px;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     border: none;
-    margin: 1rem;
 }
 
-button:hover{
-    letter-spacing: 0.3rem;
-}
 section:not(:last-of-type) {
     background-color: var(--bg-hero-and-footer);
     padding: 1.25rem;
@@ -184,7 +180,7 @@ section:nth-of-type(2) div {
 }
 
 section:nth-of-type(2) img {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     display: block;
     max-width: 100%;
 }
@@ -202,7 +198,7 @@ section:nth-of-type(2) p {
 
 section:last-of-type {
     margin-top: 1.8rem;
-    padding: 1.25rem 3rem;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
 }
@@ -425,6 +421,12 @@ footer div p {
 
     .card-flex h4 {
         padding: 1rem 1rem 0;
+    }
+
+    section:last-of-type .invite p {
+        font-size: 2.5rem;
+        padding: 1rem 2.5rem;
+        font-weight: 600;
     }
 
 }
